@@ -1,28 +1,6 @@
-;
-;	File 'phenol.top' was generated
-;	By user: unknown (1000)
-;	On host: udalova-nb
-;	At date: Mon Mar 20 17:46:13 2023
-;
-;	This is a standalone topology file
-;
-;	Created by:
-;	        :-) GROMACS - gmx pdb2gmx, 2022.5-dev-20230203-f4e9bf68b5 (-:
-;	
-;	Executable:   /mnt/c/Users/udalo/Desktop/GROMACS/gromacs/build/bin/gmx
-;	Data prefix:  /mnt/c/Users/udalo/Desktop/GROMACS/gromacs (source tree)
-;	Working dir:  /mnt/c/Users/udalo/Desktop/GROMACS/labs/yu
-;	Command line:
-;	  gmx pdb2gmx -f phenol.gro -o phenol_proc.gro -p phenol.top -ff charmm36-jul2022 -water tip3p
-;	Force field was read from current directory or a relative path - path added.
-;
-
-; Include forcefield parameters
-#include "./charmm36-jul2022.ff/forcefield.itp"
-
 [ moleculetype ]
 ; Name            nrexcl
-Other               3
+Phenol               3
 
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
@@ -134,28 +112,3 @@ Other               3
     7    11    12    13     9 
     9    11    12    13     9 
 
-; Include Position restraint file
-#ifdef POSRES
-#include "posre.itp"
-#endif
-
-; Include water topology
-#include "./charmm36-jul2022.ff/tip3p.itp"
-
-#ifdef POSRES_WATER
-; Position restraint for each water oxygen
-[ position_restraints ]
-;  i funct       fcx        fcy        fcz
-   1    1       1000       1000       1000
-#endif
-
-; Include topology for ions
-#include "./charmm36-jul2022.ff/ions.itp"
-
-[ system ]
-; Name
-Phenol
-
-[ molecules ]
-; Compound        #mols
-Other               1
