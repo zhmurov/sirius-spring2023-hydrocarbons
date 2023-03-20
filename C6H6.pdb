@@ -1,0 +1,18 @@
+TITLE     Benzene
+REMARK    THIS IS A SIMULATION BOX
+CRYST1 1000.000 1000.000 1000.000  90.00  90.00  90.00 P 1           1
+MODEL        1
+ATOM      1  CG  BENZ    1       4.950   3.130   1.000  1.00  0.00            
+ATOM      2  HG  BENZ    1       6.040   3.130   1.000  1.00  0.00            
+ATOM      3  CD1 BENZ    1       4.220   4.330   1.000  1.00  0.00            
+ATOM      4  HD1 BENZ    1       4.720   5.280   1.000  1.00  0.00            
+ATOM      5  CD2 BENZ    1       4.220   1.930   1.000  1.00  0.00            
+ATOM      6  HD2 BENZ    1       4.720   0.980   1.000  1.00  0.00            
+ATOM      7  CE1 BENZ    1       2.810   4.330   1.000  1.00  0.00            
+ATOM      8  HE1 BENZ    1       2.250   5.260   1.000  1.00  0.00            
+ATOM      9  CE2 BENZ    1       2.810   1.930   1.000  1.00  0.00            
+ATOM     10  HE2 BENZ    1       2.250   1.000   1.000  1.00  0.00            
+ATOM     11  CZ  BENZ    1       2.100   3.130   1.000  1.00  0.00            
+ATOM     12  HZ  BENZ    1       1.020   3.130   1.000  1.00  0.00            
+TER
+ENDMDL
