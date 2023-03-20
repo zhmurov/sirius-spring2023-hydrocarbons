@@ -1,0 +1,97 @@
+; Include forcefield parameters
+#include "./charmm36-jul2022.ff/forcefield.itp"
+
+[ moleculetype ]
+; Name            nrexcl
+Propane               3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue   1 AL3 rtp AL3  q  0.0
+     1        CT3      1    AL3     C1      1      -0.27     12.011
+     2        CT2      1    AL3     C2      1      -0.18     12.011
+     3        CT3      1    AL3     C3      1      -0.27     12.011
+     4        HA3      1    AL3    H11      1       0.09      1.008
+     5        HA3      1    AL3    H12      1       0.09      1.008
+     6        HA3      1    AL3    H13      1       0.09      1.008
+     7        HA2      1    AL3    H21      1       0.09      1.008
+     8        HA2      1    AL3    H22      1       0.09      1.008
+     9        HA3      1    AL3    H31      1       0.09      1.008
+    10        HA3      1    AL3    H32      1       0.09      1.008
+    11        HA3      1    AL3    H33      1       0.09      1.008   ; qtot 0
+
+[ bonds ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     2     1 
+    1     4     1 
+    1     5     1 
+    1     6     1 
+    2     3     1 
+    2     7     1 
+    2     8     1 
+    3     9     1 
+    3    10     1 
+    3    11     1 
+
+[ pairs ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     9     1 
+    1    10     1 
+    1    11     1 
+    3     4     1 
+    3     5     1 
+    3     6     1 
+    4     7     1 
+    4     8     1 
+    5     7     1 
+    5     8     1 
+    6     7     1 
+    6     8     1 
+    7     9     1 
+    7    10     1 
+    7    11     1 
+    8     9     1 
+    8    10     1 
+    8    11     1 
+
+[ angles ]
+;  ai    aj    ak funct            c0            c1            c2            c3
+    2     1     4     5 
+    2     1     5     5 
+    2     1     6     5 
+    4     1     5     5 
+    4     1     6     5 
+    5     1     6     5 
+    1     2     3     5 
+    1     2     7     5 
+    1     2     8     5 
+    3     2     7     5 
+    3     2     8     5 
+    7     2     8     5 
+    2     3     9     5 
+    2     3    10     5 
+    2     3    11     5 
+    9     3    10     5 
+    9     3    11     5 
+   10     3    11     5 
+
+[ dihedrals ]
+;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
+    4     1     2     3     9 
+    4     1     2     7     9 
+    4     1     2     8     9 
+    5     1     2     3     9 
+    5     1     2     7     9 
+    5     1     2     8     9 
+    6     1     2     3     9 
+    6     1     2     7     9 
+    6     1     2     8     9 
+    1     2     3     9     9 
+    1     2     3    10     9 
+    1     2     3    11     9 
+    7     2     3     9     9 
+    7     2     3    10     9 
+    7     2     3    11     9 
+    8     2     3     9     9 
+    8     2     3    10     9 
+    8     2     3    11     9 
