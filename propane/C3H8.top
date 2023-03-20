@@ -1,0 +1,37 @@
+;
+;	File 'C3H8.top' was generated
+;	By user: artem (1000)
+;	On host: artem-G3-3579
+;	At date: Mon Mar 20 14:16:27 2023
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2022.5 (-:
+;	
+;	Executable:   /usr/local/gromacs/bin/gmx
+;	Data prefix:  /usr/local/gromacs
+;	Working dir:  /home/artem/Desktop/Sirius/molecular_dynamics/benzele
+;	Command line:
+;	  gmx pdb2gmx -f C3H8_init.gro -o C3H8.gro -p C3H8.top
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "./charmm36.ff/forcefield.itp"
+
+
+; Include water topology
+#include "./charmm36.ff/tip3p.itp"
+
+; Include topology for ions
+#include "./charmm36.ff/ions.itp"
+
+#include "C3H8.itp"
+[ system ]
+; Name
+Propane
+
+[ molecules ]
+; Compound        #mols
+C3H8               1
