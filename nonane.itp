@@ -3,7 +3,7 @@
 Nonane      3
 
 [atoms]
-; id  type  resnr  residue  atom  cgnr  charge    mass
+; id  type  resnr  residue  atom  cgnr  charge      mass
    1   C     1      C9H20     C1     1     0.0     12.01
    2   C     1      C9H20     C2     2     0.0     12.01
    3   C     1      C9H20     C3     3     0.0     12.01
